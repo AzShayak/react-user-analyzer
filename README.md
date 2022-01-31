@@ -1,70 +1,25 @@
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Demonstration video
 
-In the project directory, you can run:
+Working application's demonstration is available in `./docs` folder and Google Drive.\
+[Google Drive Link](https://drive.google.com/file/d/1V0yMwr2TCiTEfLgwj4r-cOjPhjIx-_3t/view?usp=sharing)
 
-### `npm start`
+### Setup and run
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+_Node JS is required to run the application_
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   Open a terminal in the root folder
+-   Type `npm i` and hit <kbd>Enter</kbd> to install all dependencies
+-   After install finishes, type `npm start` and hit <kbd>Enter</kbd> to run the application
 
-### `npm test`
+### Screens
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Select Filters
+2. Show Users
+3. Edit Filters
+4. Show Individual User
 
-### `npm run build`
+### Filter Function Implementation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I have implemented the filter user and search user functionality as was instructed in the docs. I noticed that the `calendar.dateToDayId` had the `dayId` in numeric value and the `dayId` increased with the date. So used a `for/in` loop to find the `firstDayId` and `lastDayId` that comes within the filter dates. Then I used `for/in` again to count the number of meals from `calendar.mealIdToDayId`. To verify the results I have counted the meals of 5 random users manually and compared it with the filter's result and I found that the filter gave accurate results in these 5 cases.

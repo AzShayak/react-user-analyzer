@@ -36,14 +36,13 @@ export default function filterUsers(allUsers, filters) {
 
 		// Count meals within the first and last dayId
 		for (const mealKey in user.calendar.mealIdToDayId) {
-			const mealIdToDayId = user.calendar.mealIdToDayId[mealKey];
+			const dayId = user.calendar.mealIdToDayId[mealKey];
 
-			if (mealIdToDayId >= firstDayId && mealIdToDayId <= lastDayId) mealCount++;
+			if (dayId >= firstDayId && dayId <= lastDayId) mealCount++;
 		}
 
 		// Add some properties to user
 		const newUser = { ...user };
-		newUser['earliestDate'] = firstDate;
 		newUser['latestDate'] = lastDate;
 		newUser['totalMeals'] = mealCount;
 
