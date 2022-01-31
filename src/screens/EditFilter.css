@@ -1,0 +1,36 @@
+.container4 {
+	max-width: var(--container-small-width);
+	padding: 1rem;
+	margin: auto;
+}
+
+.container4 > div {
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container4 > div > h1 {
+	font-weight: var(--font-weight-thin);
+	color: var(--color-primary-dark);
+}
+
+.container4 > div > button {
+	padding: 0 0.5rem;
+	font-size: 2rem;
+	color: var(--color-primary-dark);
+	background-color: transparent;
+	border-radius: var(--button-border-radius);
+	transform: translateX(0.5rem);
+	transition: background-color 300ms;
+}
+
+.container4 > div > button:hover,
+.container4 > div > button:focus {
+	background-color: var(--text-color-inverse-secondary);
+}
+
+.container4 > div > button:active {
+	background-color: var(--text-color-disabled);
+}

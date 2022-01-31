@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chaldal Engineering Take-home Spec</title>
+
+        <style>
+            * {
+                font-family: Sans-serif;
+                color:     #444444;
+            }
+
+            p {
+                line-height: 1.3em;
+            }
+
+            p.secondary {
+                font-size: 80%;
+                color:   #999;
+            }
+
+            ul li {
+                margin:      0.7em 0;
+                line-height: 1.3em;
+            }
+
+            h1, h2 {
+                color: #31b359;
+            }
+
+            body {
+                max-width: 600px;
+                margin:    0 auto;
+            }
+
+            code {
+                font-family:      Monospace;
+                background-color: #f0f0f0;
+                padding:          0.3em 0.6em;
+            }
+
+            code.block {
+                display: block;
+                padding: 10px;
+                margin:  0.7em 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Purpose</h1>
+        <p>
+            Thank you for your interest in joining our team. We need to evaluate
+        </p>
+        <ul>
+            <li>how well candidates can think about problems they are presented with</li>
+            <li>how proficient the candidates are at building large-scale software systems</li>
+            <li>how attentive the candidates are to detail</li>
+        </ul>
+
+        <p>
+            Completing this take-home question will give us the data points we need to make this
+            evaluation. Thank you for the time you put into building the solution.
+        </p>
+
+        <p>
+            We strongly encourage you to read in full and understand the Chaldal Engineering Standards
+            document <code>engineering-standards.html</code>, and adjust your problem solving and
+            coding approach to match the criteria we'll be evaluating you on.
+        </p>
+
+        <h1>Task</h1>
+        <p>
+            Build a mobile web application using React to analyze app usage data for a hypothetical menu planning calendar app.
+            On any day, a user can plan multiple meals, and each meal may have multiple dishes. The
+            program you build will analyze how engaged users are with the app.
+        </p>
+
+        <p>Given a specific date range, your analyzer should filter users into three types</p>
+        <ul>
+            <li><code>Active:</code> users who had at least 5 meals in the specified period </li>
+            <li><code>Superactive:</code> users who had more than 10 meals in the specified period</li>
+            <li><code>Bored:</code> Users who were “active” in the preceding period, but not “active” in the specified period.</li>
+        </ul>
+        <p>
+            In the <code>./data</code> folder, you will find a bunch of files in the form <code>userId.json</code>.
+            They contain app data for a bunch of users. The structure should be fairly obvious upon examination.
+        </p>
+
+        <p>
+            In the <code>design</code> folder, you will find the following three design files to aid you in your implementation.
+            <ul>
+                <li><code>00-select-filter-option.png</code> shows filters used to generate the user list.
+                <li><code>01-show-user-grid.png</code> shows the searchable list of users based on the filter selected</li>
+                <li><code>02-edit-filter-options.png</code> shows UI to edit filter and regenerate user list </li>
+            </ul>
+        </p>
+
+        <h3>Example</h3>
+        <p>
+            Selecting a date range from 2016-09-01 to 2016-09-08 and Status as "active" should generate a list of “active” users during the specified period.
+        </p>
+
+        <h1>Guidelines</h1>
+
+        <p>
+            We do not expect you to spend more than 6 hours implementing this solution. If after spending 2-3 hours on this assignment you realize you that you might not be able complete the entire solution within 6 hours, we suggest you implement a simplified version of the design and send it in.
+        </p>
+
+        <p>
+            Review the engineering standard document to understand how your solution will be evaluated. The data layer, business logic and user interface elements of your code should be separated.
+        </p>
+
+        <h2> User Interface  </h2>
+        <p>
+            <ul>
+                <li>Your solution should work well on mobile web.</li>
+                <li>Pixel perfection is not necessary, but we will critically evaluate the neatness of the design and how user friendly it behaves. </li>
+                <li>Responsive design to fit desktop web is not required but will be a bonus</li>
+            </ul>
+        </p>
+
+        <h2>Assumptions</h2>
+        <p>
+            You may make reasonable assumptions where you see fit, or where these requirements are unclear. In such cases, you do not need to check with us on the validity of the assumptions; simply state what they are in a “README.md” under the project root. 
+        </p>
+        <p>
+            Please do not send instructions in your response e-mail. Information sent in the email body will not be reviewed by evaluators. 
+        </p>
+
+        <h2>Style</h2>
+        <p>
+            There are many ways to write such a program. When choosing your style, imagine that you are
+            building a system that will evolve to handling many more features in the very near future,
+            so structure your code in a way that would support such a future.
+        </p>
+
+        <h2>Submission</h2>
+        <p>
+            Please submit the code, data and whatever else
+            you deem necessary to help us reach our stated evaluation goals in a single compressed archive.
+        </p>
+        <p>
+            <strong>
+            Do not include any built binaries or executables within your submission, as it may get filtered by anti-virus software and will not reach us.
+            </strong>
+        </p>
+
+        <p>
+            You may communicate any notes to the evaluators using README.md. Any notes you may add in emails will not reach the evaluators, so please ensure you only use README.md for such purposes.
+        </p>
+
+    </body>
+</html>

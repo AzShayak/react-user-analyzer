@@ -1,0 +1,18 @@
+.container1 {
+	max-width: var(--container-small-width);
+	padding: 1rem;
+	margin: auto;
+}
+
+.container1 > h1 {
+	margin-bottom: 1rem;
+	text-align: center;
+	font-weight: var(--font-weight-thin);
+	color: var(--color-primary-dark);
+}
+
+.container1 > p {
+	margin-bottom: 1.5rem;
+	text-align: center;
+	color: var(--text-color-secondary);
+}

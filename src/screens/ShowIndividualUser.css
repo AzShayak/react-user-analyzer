@@ -1,0 +1,52 @@
+.container3 {
+	max-width: var(--container-width);
+	padding: 1rem;
+	margin: auto;
+}
+
+.container3 > h3 {
+	margin-top: 1rem;
+	font-weight: var(--font-weight-thin);
+	color: var(--color-primary);
+}
+
+.profile-section {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.profile-section > img {
+	width: 8rem;
+	height: 9rem;
+	object-fit: cover;
+}
+
+.profile-section > table {
+	font-size: medium;
+	color: var(--text-color-primary);
+}
+
+.day-section > p {
+	margin-top: 1rem;
+	font-weight: bold;
+	color: var(--text-color-primary);
+}
+
+.meal-section {
+	padding: 0.75rem;
+	display: flex;
+	gap: 1.5rem;
+	border-left: 1px solid var(--color-primary-light);
+}
+
+.meal-section > p {
+	text-transform: capitalize;
+	color: var(--color-primary-dark);
+}
+
+.meal-section > ul {
+	font-size: 0.875rem;
+	line-height: 1.25;
+	color: var(--text-color-secondary);
+}

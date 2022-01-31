@@ -1,0 +1,80 @@
+.container2 {
+	max-width: var(--container-width);
+	padding: 1rem;
+	margin: auto;
+}
+
+.container2 > p {
+	font-size: 1.5rem;
+	font-weight: var(--font-weight-thin);
+	text-align: center;
+	color: var(--text-color-disabled);
+}
+
+.users-grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+	gap: 1rem;
+}
+
+.filters-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.filters-section > p {
+	font-size: 0.875rem;
+	color: var(--text-color-secondary);
+}
+
+.filters-section > p > span {
+	font-size: 0.75rem;
+}
+
+.filters-section > button {
+	padding: 0.5rem;
+	font-size: medium;
+	color: var(--color-primary-dark);
+	background-color: transparent;
+	border-radius: var(--button-border-radius);
+	transition: background-color 300ms;
+}
+
+.filters-section > button:hover,
+.filters-section > button:focus {
+	background-color: var(--text-color-inverse-secondary);
+}
+
+.filters-section > button:active {
+	background-color: var(--text-color-disabled);
+}
+
+.searchbar-section {
+	margin: 1rem 0;
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--color-primary);
+	color: var(--text-color-secondary);
+	outline-style: solid;
+	outline-width: 2px;
+	outline-color: transparent;
+	transition: outline-color 300ms;
+}
+
+.searchbar-section:hover {
+	outline-color: var(--color-primary-light);
+}
+
+.searchbar-section:focus-within {
+	outline-color: var(--color-primary);
+}
+
+.searchbar-section > input {
+	flex-grow: 1;
+	padding: 0.5rem;
+}
+
+.searchbar-section > label {
+	margin: 0.5rem;
+}
